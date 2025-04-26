@@ -1,0 +1,101 @@
+/* General root styles (applied to all screens) */
+.root {
+    -fx-background-color: #e8f0fe; /* Fallback background color */
+    -fx-padding: 30;
+    -fx-alignment: center;
+}
+
+/* Specific styles for the login screen */
+.login-root {
+    -fx-background-image: url("background.gif");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Specific styles for other screens (employee, payslip, reports) */
+.components-root {
+    -fx-background-image: url("components-bg.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a73e8;
+    -fx-padding: 0 0 30 0;
+    -fx-font-family: "Arial";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #444;
+    -fx-font-family: "Arial";
+    -fx-padding: 5 0 5 0;
+}
+
+.text-field, .password-field, .combo-box {
+    -fx-pref-width: 250px;
+    -fx-pref-height: 45px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #b0bec5;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial";
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.text-field:focused, .password-field:focused, .combo-box:focused {
+    -fx-border-color: #1a73e8;
+    -fx-border-width: 2;
+}
+
+.button, .nav-button {
+    -fx-background-color: #1a73e8;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 50px;
+    -fx-padding: 12 20;
+    -fx-background-radius: 10;
+    -fx-font-family: "Arial";
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.button:hover, .nav-button:hover {
+    -fx-background-color: #1557b0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 0, 3);
+}
+
+.button:pressed, .nav-button:pressed {
+    -fx-background-color: #0d47a1;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+
+.status-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #d32f2f;
+    -fx-font-family: "Arial";
+    -fx-padding: 15 0 0 0;
+    -fx-font-style: italic;
+}
+
+.nav-button {
+    -fx-background-color: #34c759;
+}
+
+.nav-button:hover {
+    -fx-background-color: #2ba845;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 0, 3);
+}
+
+.nav-button:pressed {
+    -fx-background-color: #1b5e20;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
